@@ -4,14 +4,15 @@
   "main": "scr2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack js/app2.js dist/bundle.js",
+    "build": "webpack-dev-server --entry ./js/app2.js --output-filename ./dist/bundle.js",
     "build:prod": "webpack --mode development --entry ./js/app2.js --output ./dist/bundle.js -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {},
   "description": ""
